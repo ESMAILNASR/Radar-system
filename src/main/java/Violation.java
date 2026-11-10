@@ -1,16 +1,14 @@
 import java.util.Date;
 
 public class Violation {
-    String name ;
-    String PlateNumber;
-    String description ;
+    TypeViolation typeViolation;
     Date date;
     int price;
-    Violation(String name,String PlateNumber,Date date, int price,String description){
-        this.PlateNumber=PlateNumber;
+
+    Violation(TypeViolation typeViolation,Date date, int price){
         this.date=date;
         this.price=price;
-        this.description = description;
-        this.name=name;
+        this.typeViolation=typeViolation;
     }
+
 }
